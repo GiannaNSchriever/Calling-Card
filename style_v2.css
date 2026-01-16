@@ -29,25 +29,34 @@ body{
     grid-template-areas:
     ". . name . ."
     ". . bio . ."
-    ". image-1 image-1 image-1 text-1"
+    "name2 image-1 image-1 image-1 text-1"
+    "name2 image-102 image-102 image-102 text-102"
+    ". image-103 image-103 image-103 text-103"
+    ". image-104 image-104 image-104 text-104"
     ". image-2 image-2 image-2 text-2"
+    ". image-202 image-202 image-202 text-202"
+    ". image-203 image-203 image-203 text-203"
+    ". image-204 image-204 image-204 text-204"
     ". image-3 image-3 image-3 text-3 " 
+    ". image-302 image-302 image-302 text-302 "
+    ". image-303 image-303 image-303 text-303 "
+    ". image-304 image-304 image-304 text-304 "
+    ". image-305 image-305 image-305 text-305 "
     ;
-
 }
 
-.name {
-   grid-area: name; 
-}
 
- .name h1 {
+ .name h1{
     color:rgb(138, 178, 187);
     font-size: 12rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
+   }
+
+   .name{
+    grid-area: name;
    }
 
    .name h1:hover {
@@ -64,6 +73,21 @@ body{
     font-size: 20px;
     margin: 0; 
 }
+
+
+.name2 h2 {
+   color:rgb(138, 178, 187);
+    font-size: 12rem;
+    margin: 0;
+    font-family: "cc-dead-mans-folly", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name2 {
+   grid-area: name2; 
+}
+
 .image-1{
     grid-area: image-1;
 }
@@ -85,7 +109,7 @@ body{
     grid-area: image-2;
 }
 
-.imAGE-202{
+.image-202{
     grid-area: image-202;
 }
 
@@ -121,11 +145,50 @@ body{
     grid-area: text-1;
 }
 
+.text-102{
+    grid-area: text-102;
+}
+
+.text-103{
+    grid-area: text-103;
+}
+
+.text-104{
+    grid-area: text-104;
+}
+
 .text-2{
     grid-area: text-2;
+}
+
+.text-202{
+    grid-area: text-202;
+}
+
+.text-203{
+    grid-area: text-203;
+}
+
+.text-204{
+    grid-area: text-204;
 }
 
 .text-3{
     grid-area: text-3;
 }
 
+.text-302{
+    grid-area: text-302;
+}
+
+.text-303{
+    grid-area: text-303;
+}
+
+.text-304{
+    grid-area: text-304;
+}
+
+.text-305{
+    grid-area: text-305;
+}
