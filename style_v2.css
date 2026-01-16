@@ -164,18 +164,30 @@ body{
     transform: scale(2.4);
 }
 
-.image-202 img {
-    transition:transform 0.5 ease;
-}
-
-.image-202 img:hover {
-    transform: rotate(5deg);
-}
 .image-203{
     grid-area: image-203;
+    transform: scale(0.4);
 }
+
+.image-203 img{
+    transition: transform 1s ease;
+}
+
+.image-203 img:hover{
+    transform: scale(2.4);
+}
+
 .image-204{
     grid-area: image-204;
+    transform: scale(0.4);
+}
+
+.image-204 img{
+    transition: transform 1s ease;
+}
+
+.image-204 img:hover{
+    transform: scale(2.4);
 }
 
 
@@ -185,18 +197,54 @@ body{
 
 .image-302{
     grid-area: image-302;
+    transform: scale(0.4);
+}
+
+.image-302 img{
+    transition: transform 1s ease;
+}
+
+.image-302 img:hover{
+    transform: scale(2.4);
 }
 
 .image-303{
     grid-area: image-303;
+    transform: scale(0.4);
+}
+
+.image-303 img{
+    transition: transform 1s ease;
+}
+
+.image-303 img:hover{
+    transform: scale(2.4);
 }
 
 .image-304{
     grid-area: image-304;
+    transform: scale(0.4);
+}
+
+.image-304 img{
+    transition: transform 1s ease;
+}
+
+.image-304 img:hover{
+    transform: scale(2.4);
 }
 
 .image-305{
     grid-area: image-305;
+    transform: scale(0.4);
+}
+
+.image-305 img{
+    transition: transform 1s ease;
+}
+
+.image-305 img:hover{
+    transform: scale(2.4);
 }
 
 .text-1{
@@ -210,3 +258,7 @@ body{
 .text-3{
     grid-area: text-3;
 } 
+
+.Drehbuch{
+    grid-area: Drehbuch;
+}
