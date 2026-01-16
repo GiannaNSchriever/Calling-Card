@@ -1,8 +1,12 @@
+img{
+    max-width:100%;
+    height:auto;
+}
 .grid-container {
  display:grid;
  padding:15px 15px 15px;
  gap: 15px;
- grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
  grid-template-areas:
  "name name name bio"
  "image-1 image-1 image-1 text-1"
