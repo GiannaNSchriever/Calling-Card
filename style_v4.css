@@ -83,7 +83,7 @@ body{
 
 
 .name2 h2 {
-    color:rgb(120, 24, 0);
+   color:rgb(138, 178, 187);
     font-size: 12rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
@@ -93,14 +93,10 @@ body{
 
 .name2 {
    grid-area: name2; 
-   position:relative;
-   top: 150px;
-   left: 150px;
-   z-index: 1;
 }
 
 .name2 h2:hover {
-    color:rgb(138, 178, 187);
+    color:rgb(120, 24, 0);
     transition: color 0.8s;
    }
 
@@ -116,11 +112,22 @@ body{
 }
 
 .image-102 img{
-    transition: transform 1s ease;
+    transition: opacity 0.3s ease;
 }
 
-.image-102 img:hover{
-    transform: scale(2.4);
+.image-102 .b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-102:hover .a {
+    opacity: 0;
+}
+
+.image-102:hover .b {
+    opacity: 1;
 }
 
 .image-103{
@@ -153,7 +160,7 @@ body{
 }
 
 .drehbuch h3 {
-   color:rgb(120, 24, 0);
+   color:rgb(138, 178, 187);
     font-size: 12rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
@@ -166,22 +173,22 @@ body{
 }
 
 .drehbuch h3:hover {
-    color:rgb(138, 178, 187);
+    color:rgb(120, 24, 0);
     transition: color 0.8s;
    }
 
-   .drehbuch {
-   grid-area: drehbuch; 
-   position:relative;
-   top: 150px;
-   left: 150px;
-   z-index: 1;
-}
-
 .image-2{
     grid-area: image-2;
+    position: relative;
 }
 
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+    margin: o;
+}
 .image-202{
     grid-area: image-202;
     transform: scale(0.4);
@@ -221,8 +228,8 @@ body{
     transform: scale(2.4);
 }
 
-.chat h4 {
-   color:rgb(120, 24, 0);
+.chat-de-passage h3 {
+   color:rgb(138, 178, 187);
     font-size: 12rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
@@ -230,22 +237,15 @@ body{
     font-style: normal;
 }
 
-.chat{
-   grid-area: chat; 
+.Chat de Passage{
+   grid-area: chat de passage; 
 }
 
-.chat h4:hover {
-    color:rgb(138, 178, 187);
+.Chat de Passage h3:hover {
+    color:rgb(120, 24, 0);
     transition: color 0.8s;
    }
 
-   .chat {
-   grid-area: chat; 
-   position:relative;
-   top: 75px;
-   left: 150px;
-   z-index: 1;
-}
 .image-3{
     grid-area: image-3;
 }
