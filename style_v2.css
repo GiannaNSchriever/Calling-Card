@@ -27,7 +27,7 @@ body{
     gap: 15px;
     grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
     grid-template-areas:
-    ". . name . ."
+    "name name name schreibfeder schreibfeder"
     ". . bio . ."
     "name2 image-1 image-1 image-1 text-1"
     ". image-102 image-102 image-102 ."
@@ -47,8 +47,8 @@ body{
 
 
  .name h1{
-    color:rgb(138, 178, 187);
-    font-size: 12rem;
+    color:rgb(120, 24, 0);
+    font-size: 25rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
     font-weight: 400;
@@ -57,14 +57,26 @@ body{
 
    .name{
     grid-area: name;
+    position: relative;
+    left: 150px;
    }
 
    .name h1:hover {
-    color:rgb(120, 24, 0);
-    transition: color 0.8s;
+     color:rgb(138, 178, 187);
+    transition: color 2s;
    }
 
-.bio{
+.schreibfeder {
+    grid-area: schreibfeder;
+    position:relative;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    transform:scale(500);
+    margin:0;
+}
+
+    .bio{
     grid-area: bio;
 }
 
@@ -72,14 +84,8 @@ body{
 
 .bio p{
     font-size: 20px;
-    margin: 0; 
-    opacity: 0.2;
-    transition: opacity 0.5s ease;
 }
 
-.bio p:hover{
-    opacity: 1;
-}
 
 
 .name2 h2 {
