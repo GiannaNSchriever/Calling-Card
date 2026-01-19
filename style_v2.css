@@ -28,7 +28,9 @@ body{
     grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
     grid-template-areas:
     "name name name schreibfeder schreibfeder"
-    ". . bio . ."
+    ". . . schreibfeder schreibfeder"
+    ". . . . ."
+    ". bio bio bio ."
     "name2 image-1 image-1 image-1 text-1"
     ". image-102 image-102 image-102 ."
     ". image-103 image-103 image-103 ."
@@ -68,11 +70,15 @@ body{
 
 .schreibfeder {
     grid-area: schreibfeder;
+}
+
+.schreibfeder img{
     position:relative;
-    top: 100px;
-    left: 100px;
-    z-index: 1;
-    transform:scale(500);
+    left: 150px;
+    right: 150px
+    width: 35rem;
+    height: 60rem;
+    transform:scale(20rem);
     margin:0;
 }
 
