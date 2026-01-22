@@ -8,27 +8,32 @@
 }
 
 
+
 img{
     max-width:100%;
     height:auto;
 }
 
 body{
-    background-color: rgb(45, 14, 0);
+  background-image: url("Data/Hintergrund.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
     font-family: 'Courier New', Courier, monospace, serif;
     font-size: 17px;
     font-weight: normal;
     font-style:normal;
-    color:rgb(138, 178, 187);
+    color:rgb(0, 0, 0);
+    margin: 0;
 }
 .grid-container {
     display:grid;
     padding:15px 15px 15px;
     gap: 15px;
-    grid-template-columns: 1fr 3fr 2fr 2fr 2fr 3fr 1fr;
+    grid-template-columns: 0fr 3fr 2fr 2fr 2fr 3fr 0fr;
     grid-template-areas:
-    ". name name name schreibfeder schreibfeder ."
-    ". . . . schreibfeder schreibfeder ."
+    ". name schreibfeder schreibfeder schreibfeder bio ."
+    ". . schreibfeder schreibfeder schreibfeder bio ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
@@ -39,19 +44,11 @@ body{
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
-    ". . bio bio bio . ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ".name2 image-1 image-1 image-1 text-1."
-    ". . image-102 image-102 image-102 . ."
+    ". name2 image-1 image-1 image-1 text-1 ."
+    ". . image-102 image-102 image-102 text-1 ."
     ". . image-103 image-103 image-103 . ."
     ". . image-104 image-104 image-104 . ."
     ". . . . . . ."
@@ -60,12 +57,8 @@ body{
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". text-2 image-2 image-2 image-2 drehbuch. "
-    ". . image-202 image-202 image-202 . ."
+    ". text-2 image-2 image-2 image-2 drehbuch . "
+    ". text-2 image-202 image-202 image-202 . ."
     ". . image-203 image-203 image-203 . ."
     ". . image-204 image-204 image-204 . ."
     ". . . . . . ."
@@ -74,12 +67,8 @@ body{
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
     ". chat image-3 image-3 image-3 text-3 ." 
-    ". . image-302 image-302 image-302 . ."
+    ". . image-302 image-302 image-302 text-3 ."
     ". . image-303 image-303 image-303 . ."
     ". . image-304 image-304 image-304 . ."
     ". . image-305 image-305 image-305 . ."
@@ -95,36 +84,30 @@ body{
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". ende ende ende schreibfeder2 schreibfeder2 ."
+    ". schreibfeder2 schreibfeder2 ende ende unterschrift ."
     ;
+    margin: 0;
 }
 
 
  .name h1{
     color:rgb(120, 24, 0);
-    font-size: 25rem;
+    font-size: 12rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
     font-weight: 400;
     font-style: normal;
+    position:relative;
+    left: 150px;   
    }
 
    .name{
     grid-area: name;
-    position: relative;
-    left: 150px;
+
    }
 
    .name h1:hover {
-     color:rgb(138, 178, 187);
+     color:rgb(0, 0, 0);
     transition: color 2s;
    }
 
@@ -133,12 +116,13 @@ body{
 }
 
 .schreibfeder img{
-    position:relative;
-    left: 100px;
-    width: 25rem;
-    height: 60rem;
-    transform:scale(20rem);
+    width: 40rem;
+    height:15rem;
+    transform:scale(19rem);
     margin:0;
+    position: relative;
+    top:100px;
+    left: 150px;
 }
 
     .bio{
@@ -149,9 +133,16 @@ body{
 
 .bio p{
     font-size: 20px;
+    position:relative;
+    top: 200px;
+    margin: 0;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
 }
 
-
+.bio p:hover{
+    opacity: 1;
+}
 
 .name2 h2 {
     color:rgb(120, 24, 0);
@@ -165,13 +156,13 @@ body{
 .name2 {
    grid-area: name2; 
    position:relative;
-   top: 75px;
+   top: 100px;
    left: 150px;
    z-index: 1;
 }
 
 .name2 h2:hover {
-    color:rgb(138, 178, 187);
+    color:rgb(0, 0, 0);
     transition: color 0.8s;
    }
 
@@ -185,7 +176,6 @@ body{
 
 .image-102{
     grid-area: image-102;
-    position: relative;
     transform: scale(0.4)
 }
 
@@ -240,14 +230,14 @@ body{
 }
 
 .drehbuch h3:hover {
-    color:rgb(138, 178, 187);
+    color:rgb(0, 0, 0);
     transition: color 0.8s;
    }
 
    .drehbuch {
    grid-area: drehbuch; 
    position:relative;
-   top: 75px;
+   top: 100px;
    right: 150px;
    z-index: 1;
 }
@@ -312,7 +302,7 @@ body{
 }
 
 .chat h4:hover {
-    color:rgb(138, 178, 187);
+    color:rgb(0, 0, 0);
     transition: color 0.8s;
    }
 
@@ -320,7 +310,6 @@ body{
    grid-area: chat; 
    position:relative;
    left: 150px;
-   bottom: 75px;
    z-index: 1;
 }
 .image-3{
@@ -384,8 +373,6 @@ body{
 
 .text-1{
     grid-area: text-1;
-    position:relative;
-    top: 10px
 } 
 
 .text-1 p{
@@ -400,8 +387,6 @@ body{
 
 .text-2{
     grid-area: text-2;
-    position:relative;
-    top: 10px
 } 
 
 .text-2 p{
@@ -416,8 +401,6 @@ body{
 
 .text-3{
     grid-area: text-3;
-    position:relative;
-    top: 10px
 } 
 
 .text-3 p{
@@ -436,7 +419,7 @@ body{
 
 .ende {
     color:rgb(120, 24, 0);
-    font-size: 25rem;
+    font-size: 20rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
     font-weight: 400;
@@ -445,13 +428,11 @@ body{
 
 .ende{
     grid-area: ende;
-    position: relative;
-    left: 150px;
     z-index: 2;
    }
 
 .ende h7:hover {
-     color:rgb(138, 178, 187);
+     color:rgb(0, 0, 0);
     transition: color 2s;
    }
 
@@ -461,9 +442,18 @@ body{
 
 .schreibfeder2 img{
     position:relative;
-    left: 50px;
+    left: 150px;
     width: 25rem;
     height: 60rem;
     transform:scale(20rem);
     margin:0;
+}
+
+.unterschrift {
+    grid-area: unterschrift;
+}
+
+.unterschrift img{
+    position: relative;
+    top: 600px;
 }
