@@ -158,14 +158,10 @@ body{
     transform: scale(1);
     width: 800px;
     height: auto;
-    position: relative; 
-    z-index: 10; 
-    transition: transform 1s ease; 
 }
 
 .image-1:hover {
     transform: transform 1s ease;
-    z-index: 20; 
 }
 
 
@@ -190,6 +186,7 @@ body{
 
 .image-103 img{
     transition: transform 1s ease;
+    left: 5px;
 }
 
 .image-103 img:hover{
@@ -237,14 +234,8 @@ body{
     grid-area: image-2;
     width: 800px;
     height: auto;
-    position: relative; 
-    z-index: 10;        
-    transition: transform 1s ease;
 }
 
-.image-2:hover {
-    z-index: 20;  
-}
 
 .image-202{
     grid-area: image-202;
@@ -264,6 +255,7 @@ body{
 
 .image-203 img{
     transition: transform 1s ease;
+    left: 5px;
 }
 
 .image-203 img:hover{
@@ -306,13 +298,6 @@ body{
     grid-area: image-3;
     width: 800px;
     height: auto;
-    position: relative; 
-    z-index: 10;        
-    transition: transform 1s ease;
-}
-
-.image-3:hover {
-    z-index: 20;  
 }
 
 .image-302{
@@ -321,6 +306,7 @@ body{
 
 .image-302 img{
     transition: transform 1s ease;
+
 }
 
 .image-302 img:hover{
@@ -333,6 +319,7 @@ body{
 
 .image-303 img{
     transition: transform 1s ease;
+    left: 5px;
 }
 
 .image-303 img:hover{
@@ -345,6 +332,7 @@ body{
 
 .image-304 img{
     transition: transform 1s ease;
+    
 }
 
 .image-304 img:hover{
@@ -357,6 +345,7 @@ body{
 
 .image-305 img{
     transition: transform 1s ease;
+    left: 5px;
 }
 
 .image-305 img:hover{

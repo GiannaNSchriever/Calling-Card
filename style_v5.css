@@ -442,7 +442,7 @@ body{
 
 .unterschrift {
     grid-area: unterschrift;
-    position:relative
+    position:relative;
     bottom: 150px;
 }
 
