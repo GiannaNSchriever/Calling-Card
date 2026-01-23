@@ -15,10 +15,7 @@ img{
 }
 
 body{
-  background-image: url("Data/Hintergrund2.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 1.5;
+background-color: rgb(143, 223, 255);
 
     font-family: 'Courier New', Courier, monospace, serif;
     font-size: 17px;

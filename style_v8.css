@@ -7,15 +7,6 @@
   src: url("Fonts/Mess-Light_web.woff2") format("woff2");
 }
 
-a{color:rgb(68, 14, 0);}
-
-.rubik-80s-fade-regular {
-  font-family: "Rubik 80s Fade", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 
 
 img{
@@ -23,71 +14,68 @@ img{
     height:auto;
 }
 
-body{
-  background: radial-gradient(
-    ellipse at center,
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
 
-    #848a8e 100%
-  );
+body{
+  background-image: url("Data/80Hintergrund.jpg");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 1;
     font-family: 'Courier New', Courier, monospace, serif;
     font-size: 17px;
     font-weight: normal;
     font-style:normal;
-    color:rgb(68, 14, 0);
+    color:rgb(255, 255, 255);
     margin: 0;
+    a{
+        color: inherit;
+    }
 }
 .grid-container {
     display:grid;
     padding:15px 15px 15px;
     gap: 15px;
+    margin: 0;
     grid-template-columns: 0fr 3fr 2fr 2fr 2fr 3fr 0fr;
     grid-template-areas:
-    ". name name name schreibfeder schreibfeder ."
-    ". . . . schreibfeder schreibfeder ."
-    ". . . . . bio ."
+    ". name name name . . ."
+    ". . . . . bio."
+    ". name2 name2 . . . ."
+    "image-1-titel image-1-titel image-1-titel image-1-titel image-1-titel image-1-titel image-1-titel"
+    ". . . . . text-1 ."
+    ". . image-1 image-1 image-1 text-1 ."
+    ". . image-102 image-102 image-103 text-1 ."
+    ". . image-103 image-103 image-103 . ."
+    ". . image-104 image-104 image-104 . ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
+    ". text-2 image-2 image-2 image-2 drehbuch . "  
+    ". text-2 image-202 image-202 image-202 . ."
+    ". . image-203 image-203 image-203 . ."
+    ". . image-204 image-204 image-204 . ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". name2 image-1 image-1 image-1 text-1 ."
-    ". . image-102 image-103 . . ."
-    ". . image-104 . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". text-2 image-2 image-2 image-2 drehbuch . "
-    ". . image-202 image-203 . . ."
-    ". . image-204 image-203 . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
-    ". . . . . . ."
+
     ". chat image-3 image-3 image-3 text-3 ." 
-    ". . image-302 image-303 . . ."
-    ". . image-304 image-305 . . ."
-    ". . . . schreibfeder2 schreibfeder2 ."
-    ". . . . . unterschrift ."
+    ". . image-302 image-302 image-302 text-3 ."
+    ". . image-303 image-303 image-303 . ."
+    ". . image-304 image-304 image-304 . ."
+    ". . image-305 image-305 image-305 . ."
     ;
-    margin: 0;
+
 }
 
 
  .name h1{
-    color:rgb(120, 24, 0);
+    color:rgb(255, 255, 255);
     font-size: 12rem;
     font: optional;height: 1000x;
     margin: 0;
@@ -95,7 +83,8 @@ body{
     font-weight: 400;
     font-style: normal;
     position:relative;
-    left: 150px;   
+    left: 150px;  
+    top: 150px; 
    }
 
    .name{
@@ -135,7 +124,7 @@ body{
 
 
 .name2 h2 {
-    color:rgb(120, 24, 0);
+    color:rgb(255, 255, 255);
     font-size: 12rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
@@ -148,31 +137,37 @@ body{
    position:relative;
    top: 100px;
    left: 150px;
-   z-index: 15;
-   
+   z-index: 1;
 }
 
+.name2 h2:hover {
+    color:rgb(0, 0, 0);
+    transition: color 0.8s;
+   }
 
-.image-1{
-    grid-area: image-1;
-    transform: scale(1);
-    width: 800px;
+.image-1-titel{
+    grid-area: image-1-titel;
+    width:max-content;
     height: auto;
-    position: relative; 
-    z-index: 10; 
-    transition: transform 1s ease; 
+
 }
 
-.image-1:hover {
-    transform: transform 1s ease;
-    z-index: 20; 
+.image-1 {
+    grid-area: image-1;
+    transform: scale(0.4)
 }
 
+.image-1 img{
+transition: transform 1s ease;
+}
 
-
+.image-1 img:hover{
+    transform:scale(2.4)
+}
 
 .image-102{
     grid-area: image-102;
+    transform: scale(0.4)
 }
 
 .image-102 img{
@@ -185,6 +180,7 @@ body{
 
 .image-103{
     grid-area: image-103;
+    transform: scale(0.4);
 }
 
 .image-103 img{
@@ -200,6 +196,7 @@ body{
 
 .image-104{
     grid-area: image-104;
+    transform: scale(0.4);
 }
 
 .image-104 img{
@@ -210,8 +207,9 @@ body{
     transform: scale(2.4);
 }
 
+
 .drehbuch h3 {
-   color:rgb(120, 24, 0);
+   color:rgb(255, 255, 255);
     font-size: 12rem;
     margin: 0;
     font-family: "cc-dead-mans-folly", sans-serif;
@@ -223,30 +221,29 @@ body{
    grid-area: drehbuch; 
 }
 
+.drehbuch h3:hover {
+    color:rgb(0, 0, 0);
+    transition: color 0.8s;
+   }
 
    .drehbuch {
    grid-area: drehbuch; 
    position:relative;
    top: 100px;
    right: 150px;
-   z-index: 15;
+   z-index: 1;
 }
 
-.image-2 {
+.image-2{
     grid-area: image-2;
-    width: 800px;
+    transform: scale (2);
+    width: 800px ;
     height: auto;
-    position: relative; 
-    z-index: 10;        
-    transition: transform 1s ease;
-}
-
-.image-2:hover {
-    z-index: 20;  
 }
 
 .image-202{
     grid-area: image-202;
+    transform: scale(0.4);
 }
 
 .image-202 img{
@@ -259,6 +256,7 @@ body{
 
 .image-203{
     grid-area: image-203;
+    transform: scale(0.4);
 }
 
 .image-203 img{
@@ -271,6 +269,7 @@ body{
 
 .image-204{
     grid-area: image-204;
+    transform: scale(0.4);
 }
 
 .image-204 img{
@@ -294,28 +293,27 @@ body{
    grid-area: chat; 
 }
 
+.chat h4:hover {
+    color:rgb(0, 0, 0);
+    transition: color 0.8s;
+   }
+
    .chat {
    grid-area: chat; 
    position:relative;
    left: 150px;
-   z-index: 15;
+   z-index: 1;
 }
-
-.image-3 {
+.image-3{
     grid-area: image-3;
-    width: 800px;
+    transform: scale (2);
+    width: 800px ;
     height: auto;
-    position: relative; 
-    z-index: 10;        
-    transition: transform 1s ease;
-}
-
-.image-3:hover {
-    z-index: 20;  
 }
 
 .image-302{
     grid-area: image-302;
+    transform: scale(0.4);
 }
 
 .image-302 img{
@@ -328,6 +326,7 @@ body{
 
 .image-303{
     grid-area: image-303;
+    transform: scale(0.4);
 }
 
 .image-303 img{
@@ -340,6 +339,7 @@ body{
 
 .image-304{
     grid-area: image-304;
+    transform: scale(0.4);
 }
 
 .image-304 img{
@@ -352,6 +352,7 @@ body{
 
 .image-305{
     grid-area: image-305;
+    transform: scale(0.4);
 }
 
 .image-305 img{
@@ -364,12 +365,15 @@ body{
 
 .text-1{
     grid-area: text-1;
+    position: relative;
+    bottom: 300px;
 } 
 
 .text-1 p{
     margin: 0; 
     opacity: 0.2;
     transition: opacity 0.5s ease;
+    color:rgb(0, 0, 0);
 }
 
 .text-1 p:hover{
@@ -427,22 +431,15 @@ body{
     transition: color 2s;
    }
 
-   .schreibfeder2 {
-    grid-area: schreibfeder2;
+.image-wrap {
+  overflow: hidden;  
 }
 
-.schreibfeder2 img{
-    width: 12rem;
-    height:30rem;
-    transform:scale(19rem);
-    margin:0;
-    position: relative;
-    left: 75px
+.image-wrap img {
+  transform: scale(0.4);
+  transition: transform 1s ease;
 }
 
-.unterschrift {
-    grid-area: unterschrift;
-    position:relative
-    bottom: 150px;
+.image-wrap img:hover {
+  transform: scale(2.4);
 }
-
