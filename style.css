@@ -1,0 +1,468 @@
+@font-face{
+  font-family: "Avara-Bold";
+  src: url("Fonts/Avara-Bold.woff2") format("woff2");
+}
+@font-face{
+  font-family: "Mess-Light_web";
+  src: url("Fonts/Mess-Light_web.woff2") format("woff2");
+}
+
+
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+body{
+  background-image: url("Data/Hintergrund.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+    font-family: 'Courier New', Courier, monospace, serif;
+    font-size: 17px;
+    font-weight: normal;
+    font-style:normal;
+    color:rgb(0, 0, 0);
+    margin: 0;
+}
+.grid-container {
+    display:grid;
+    padding:15px 15px 15px;
+    gap: 15px;
+    margin: 0;
+    grid-template-columns: 0fr 3fr 2fr 2fr 2fr 3fr 0fr;
+    grid-template-areas:
+    ". name name name schreibfeder schreibfeder ."
+    ". . . . schreibfeder schreibfeder ."
+    ". . . . . bio."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". name2 name2 . . . ."
+    "image-1-titel image-1-titel image-1-titel image-1-titel image-1-titel image-1-titel image-1-titel"
+    ". . . . . text-1 ."
+    ". . image-1 image-1 image-1 text-1 ."
+    ". . image-102 image-102 image-102 text-1 ."
+    ". . image-103 image-103 image-103 . ."
+    ". . image-104 image-104 image-104 . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". text-2 image-2 image-2 image-2 drehbuch . "  
+    ". text-2 image-202 image-202 image-202 . ."
+    ". . image-203 image-203 image-203 . ."
+    ". . image-204 image-204 image-204 . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". chat image-3 image-3 image-3 text-3 ." 
+    ". . image-302 image-302 image-302 text-3 ."
+    ". . image-303 image-303 image-303 . ."
+    ". . image-304 image-304 image-304 . ."
+    ". . image-305 image-305 image-305 . ."
+    ". . . . . unterschrift ."
+    ;
+
+}
+
+
+ .name h1{
+    color:rgb(120, 24, 0);
+    font-size: 12rem;
+    font: optional;height: 1000x;
+    margin: 0;
+    font-family: "cc-dead-mans-folly", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position:relative;
+    left: 150px;  
+    top: 150px; 
+   }
+
+   .name{
+    grid-area: name;
+
+   }
+
+   .name h1:hover {
+     color:rgb(0, 0, 0);
+    transition: color 2s;
+   }
+
+.schreibfeder {
+    grid-area: schreibfeder;
+}
+
+.schreibfeder img{
+    width: 12rem;
+    height:30rem;
+    transform:scale(19rem);
+    margin:0;
+    position: relative;
+    top:100px;
+    left: 75px
+}
+
+    .bio{
+    grid-area: bio;
+}
+
+
+
+.bio p{
+    font-size: 20px;
+}
+
+
+
+.name2 h2 {
+    color:rgb(120, 24, 0);
+    font-size: 12rem;
+    margin: 0;
+    font-family: "cc-dead-mans-folly", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name2 {
+   grid-area: name2; 
+   position:relative;
+   top: 100px;
+   left: 150px;
+   z-index: 1;
+}
+
+.name2 h2:hover {
+    color:rgb(0, 0, 0);
+    transition: color 0.8s;
+   }
+
+.image-1-titel{
+    grid-area: image-1-titel;
+    width:max-content;
+    height: auto;
+
+}
+
+.image-1 {
+    grid-area: image-1;
+    transform: scale(0.4)
+}
+
+.image-1 img{
+transition: transform 1s ease;
+}
+
+.image-1 img:hover{
+    transform:scale(2.4)
+}
+
+.image-102{
+    grid-area: image-102;
+    transform: scale(0.4)
+}
+
+.image-102 img{
+    transition: transform 1s ease;
+}
+
+.image-102 img:hover{
+    transform: scale(2.4);
+}
+
+.image-103{
+    grid-area: image-103;
+    transform: scale(0.4);
+}
+
+.image-103 img{
+    transition: transform 1s ease;
+}
+
+.image-103 img:hover{
+    transform: scale(2.4)
+}
+.image-103 img:hover{
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.image-104{
+    grid-area: image-104;
+    transform: scale(0.4);
+}
+
+.image-104 img{
+    transition: transform 1s ease;
+}
+
+.image-104 img:hover{
+    transform: scale(2.4);
+}
+
+
+.drehbuch h3 {
+   color:rgb(120, 24, 0);
+    font-size: 12rem;
+    margin: 0;
+    font-family: "cc-dead-mans-folly", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.drehbuch {
+   grid-area: drehbuch; 
+}
+
+.drehbuch h3:hover {
+    color:rgb(0, 0, 0);
+    transition: color 0.8s;
+   }
+
+   .drehbuch {
+   grid-area: drehbuch; 
+   position:relative;
+   top: 100px;
+   right: 150px;
+   z-index: 1;
+}
+
+.image-2{
+    grid-area: image-2;
+    transform: scale (2);
+    width: 800px ;
+    height: auto;
+}
+
+.image-202{
+    grid-area: image-202;
+    transform: scale(0.4);
+}
+
+.image-202 img{
+    transition: transform 1s ease;
+}
+
+.image-202 img:hover{
+    transform: scale(2.4);
+}
+
+.image-203{
+    grid-area: image-203;
+    transform: scale(0.4);
+}
+
+.image-203 img{
+    transition: transform 1s ease;
+}
+
+.image-203 img:hover{
+    transform: scale(2.4);
+}
+
+.image-204{
+    grid-area: image-204;
+    transform: scale(0.4);
+}
+
+.image-204 img{
+    transition: transform 1s ease;
+}
+
+.image-204 img:hover{
+    transform: scale(2.4);
+}
+
+.chat h4 {
+   color:rgb(120, 24, 0);
+    font-size: 12rem;
+    margin: 0;
+    font-family: "cc-dead-mans-folly", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chat{
+   grid-area: chat; 
+}
+
+.chat h4:hover {
+    color:rgb(0, 0, 0);
+    transition: color 0.8s;
+   }
+
+   .chat {
+   grid-area: chat; 
+   position:relative;
+   left: 150px;
+   z-index: 1;
+}
+.image-3{
+    grid-area: image-3;
+    transform: scale (2);
+    width: 800px ;
+    height: auto;
+}
+
+.image-302{
+    grid-area: image-302;
+    transform: scale(0.4);
+}
+
+.image-302 img{
+    transition: transform 1s ease;
+}
+
+.image-302 img:hover{
+    transform: scale(2.4);
+}
+
+.image-303{
+    grid-area: image-303;
+    transform: scale(0.4);
+}
+
+.image-303 img{
+    transition: transform 1s ease;
+}
+
+.image-303 img:hover{
+    transform: scale(2.4);
+}
+
+.image-304{
+    grid-area: image-304;
+    transform: scale(0.4);
+}
+
+.image-304 img{
+    transition: transform 1s ease;
+}
+
+.image-304 img:hover{
+    transform: scale(2.4);
+}
+
+.image-305{
+    grid-area: image-305;
+    transform: scale(0.4);
+}
+
+.image-305 img{
+    transition: transform 1s ease;
+}
+
+.image-305 img:hover{
+    transform: scale(2.4);
+}
+
+.text-1{
+    grid-area: text-1;
+    position: relative;
+    bottom: 500px;
+} 
+
+.text-1 p{
+    margin: 0; 
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}
+
+.text-1 p:hover{
+    opacity: 1;
+}
+
+.text-2{
+    grid-area: text-2;
+} 
+
+.text-2 p{
+    margin: 0; 
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}
+
+.text-2 p:hover{
+    opacity: 1;
+}
+
+.text-3{
+    grid-area: text-3;
+} 
+
+.text-3 p{
+    margin: 0; 
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}
+
+.text-3 p:hover{
+    opacity: 1;
+}
+
+.Drehbuch{
+    grid-area: Drehbuch;
+}
+
+.ende {
+    color:rgb(120, 24, 0);
+    font-size: 20rem;
+    margin: 0;
+    font-family: "cc-dead-mans-folly", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   }
+
+.ende{
+    grid-area: ende;
+    z-index: 2;
+   }
+
+.ende h7:hover {
+     color:rgb(0, 0, 0);
+    transition: color 2s;
+   }
+
+   .schreibfeder2 {
+    grid-area: schreibfeder2;
+}
+
+.schreibfeder2 img{
+    position:relative;
+    left: 150px;
+    width: 25rem;
+    height: 60rem;
+    transform:scale(20rem);
+    margin:0;
+}
+
+.unterschrift {
+    grid-area: unterschrift;
+}
+
+.image-wrap {
+  overflow: hidden;  
+}
+
+.image-wrap img {
+  transform: scale(0.4);
+  transition: transform 1s ease;
+}
+
+.image-wrap img:hover {
+  transform: scale(2.4);
+}
